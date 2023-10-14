@@ -1,7 +1,3 @@
-# Code Alpha
-
-*This Repository is been created for the Internship Task Completion Source code File.*
-
 # **Task 1 : Login Authentication**
 
 🔒  **Lockout Time Authentication** : I've implemented a security feature to protect user accounts.Indicating enhanced security.
