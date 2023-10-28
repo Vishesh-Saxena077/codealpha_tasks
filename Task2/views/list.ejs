@@ -1,0 +1,24 @@
+<%- include('partials/header.ejs'); %>
+<div class="modal-content mt-2" style="height:100vh">
+    <div class="d-flex justify-content-center align-items-center flex-column align-items-center w-100 gap-2 p-3 border-top-0">
+        <h1><%= Title %></h1>
+        <h6 class="text-primary"> <%= todaysDate %> </h6>
+        <div  class="container-fluid d-flex justify-content-center align-items-center">  
+            <ul class="container-fluid">
+            <% newListItems.forEach((item) => { %>
+            <form method="POST" action="/delete">
+                <li class="p-3 bg-dark list-unstyled mt-3 text-light rounded-1">
+                    <input type="checkbox" name="checkItem" value="<%=item._id%>" onchange="this.form.submit()" /> 
+                    <%= item.name; %>
+                </li>
+                <input type="hidden" name="listName" value="<%= Title %>">
+            </form>
+            <% }); %>
+            </ul>
+        </div>
+    <div>
+</div>
+<%- include('partials/form.ejs'); %>
+<%- include('partials/footer.ejs'); %>
+
+           
