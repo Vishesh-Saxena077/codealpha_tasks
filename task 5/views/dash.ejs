@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>dash</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <h1> Hi! <%= userEmail %> </h1>
+
+    <hr>
+    <a href="/logout">logout</a>
+    
+    <hr>
+    <div>
+        <input type="text" id="searchInput" onkeyup="performSearch()" placeholder="Search by author, category, or title">
+        <button onclick="performSearch()">Search</button>
+    </div>
+    <hr>
+    <div>
+        <select id="categorySelect" onchange="performSearch()">
+            <option value="">Select a category</option>
+            <option value="fiction">Fiction</option>
+            <option value="science">Science</option>
+            <!-- Add more category options here -->
+        </select>
+        <button onclick="performSearch()">Search</button>
+    </div>
+    <hr>
+        <a href="/history">View History</a>
+    <hr>
+
+
+    <section id="bookDisplay"></section>
+    
+    <script src="js/script.js"></script>
+</body>
+
+</html>

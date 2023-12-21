@@ -1,0 +1,30 @@
+.container {
+    height: 100vh;
+}
+
+
+/* Styles for the book cards */
+
+.book-card {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin: 10px;
+    width: 200px;
+    height: 250px;
+    text-align: center;
+    display: inline-block;
+    overflow-y: scroll;
+}
+
+.book-card h2 {
+    margin-top: 0;
+}
+
+.book-card p {
+    margin-bottom: 8px;
+}
+
+.book-card img {
+    max-width: 100%;
+    height: auto;
+}
